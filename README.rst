@@ -4,12 +4,12 @@ UserDose
 UserDorse is a user listing site, A web service application with all browser compatibility.
 It provides a registration page, lists registered users and outputs CSVs as per requirements. 
 
-The code is developed entirely 
-    1. Using python, django (Python Web Framework), django rest framework (For REST APIs), and some other required modules in backed (You may find list of base requirements under BASE/config/settings/base.py, 
-       for local requirements under BASE/config/settings/local.py, 
-       for production level requirements under BASE/config/settings/production.py), 
-    2. Using html, css, jquery, jquery validation library, bootstrap 
-    3. And with using some other modules for frontend, and using Docker as for containerisation of application, database MongoDB, etc.
+The code is developed entirely using
+- Python, django (Python Web Framework), django rest framework (For REST APIs), and some other required modules in backed (You may find list of base requirements under BASE/config/settings/base.py, 
+   for local requirements under BASE/config/settings/local.py, 
+   for production level requirements under BASE/config/settings/production.py), 
+- Html, css, jquery, jquery validation library, bootstrap 
+- Some other modules for frontend, and using Docker as for containerisation of application, database MongoDB, etc.
 
 
 :License: MIT
@@ -17,16 +17,6 @@ The code is developed entirely
 Terminology
 --------------
 BASE :- Reffers project’s root or base path where this document may also found out or local.yml / production.yml may found out as, /userdose/
-
-Libraries Used
----------------
-All libraries or modules that were in the development are either free to use or are open source.
-The code is developed entirely 
-    1. Using python, django (Python Web Framework), django rest framework (For REST APIs), and some other required modules in backed (You may find list of base requirements under BASE/config/settings/base.py, 
-       for local requirements under BASE/config/settings/local.py, 
-       for production level requirements under BASE/config/settings/production.py), 
-    2. Using html, css, jquery, jquery validation library, bootstrap 
-    3. And with using some other modules for frontend, and using Docker as for containerisation of application, database MongoDB, etc.
 
 
 URLs & Structure
