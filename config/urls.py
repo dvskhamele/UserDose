@@ -5,14 +5,13 @@ from django.contrib import admin
 from django.views import defaults as default_views
 from rest_framework.routers import DefaultRouter
 from userdose.users.views import (
-    UserViewSet, 
-    UserCreateViewSet, 
+    UserViewSet,
+    UserCreateViewSet,
 )
 
 router = DefaultRouter()
 # User management
 router.register(r'accounts/register', UserCreateViewSet)
-router.register(r'users', UserViewSet)
 
 urlpatterns = [
     #APIs

@@ -1,0 +1,172 @@
+        label{
+			padding-left: 30px;
+		}
+		form{
+			padding-top: 45px;
+		}
+		.tbody{
+			overflow: auto;
+		}
+
+
+		.block{
+			margin-top: 30px;
+			height: 600px;
+			width: 550px;
+			border: 2px solid #ccc;
+			padding-top: 25px;
+			border-radius: 13px;
+
+
+		}
+		.border1{
+			background-color: #fff;
+			border-bottom: #67eb34;
+			line-height: 1.5;
+			width: 85%;
+            height: calc(1.5em + .75rem + 2px);
+			font-size: 1rem;
+            font-weight: 400;
+            display: block;
+            border-bottom: 3px solid #32735c;
+            border-left: #fff;
+            border-right: #fff;
+            border-top: #fff;
+            margin-left: 30px;
+
+
+
+
+		}
+		.color:focus{
+			border-bottom: 5px solid #5b8a7c;
+
+		}
+		.position{
+			margin-bottom: 25px;
+			padding-top: 25px;
+		}
+		.font1{
+			background-color: #fff;
+			border: 2px solid #fff;
+			font-size: 15px;
+			font-weight: bold;
+			color: #32735c;
+			margin-left: -90px;
+
+
+		}
+		.font2{
+
+			background-color: #fff;
+			border: 2px solid #fff;
+			font-size: 15px;
+			font-weight: bold;
+			color: #32735c;
+			padding-left: 50px;
+
+		}
+		.color1:focus{
+			color: #2924a6;
+
+
+
+		}
+		.color1:hover{
+			color: #4b6b60;
+			background-color: #dfe6e68c;
+			border-radius: 9px;
+
+		}
+		.color2{
+			font-size: 12px;
+			color: #5b806c;
+		}
+		.popup{
+
+			background-color: #fff;
+			text-align: center;
+			width: 650px;
+			height: 150px;
+			border: 1px solid;
+			box-shadow: 10px 10px 10px 10px grey;
+			position: absolute;
+			padding-top: 53px;
+			border-radius: 15px;
+			font-size: 20px;
+
+		}
+		.pos1{
+			position: absolute;
+			top: 100px;
+			left: 540px;
+			font-size: 13px;
+		}
+		.pos2{
+			position: absolute;
+			top: 98px;
+			left: 630px;
+			font-size: 15px;
+		}
+		.header{
+			background-color: #32735c;
+			height: 72px;
+			width: 281px;
+			border-bottom-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			margin-top: -71px;
+			margin-left: 116px;
+
+
+		}
+		.font3{
+			font-size: 28px;
+			font-weight: bold;
+			text-align: center;
+			position: absolute;
+			left: 190px;
+			margin-top: 16px;
+			color: white;
+		}
+		.val{
+			font-weight: bold;
+			color: red;
+			padding-left: 30px;
+			display: none;
+		}
+		.header1{
+			background-color: #32735c;
+			height: 72px;
+			width: 281px;
+			border-bottom-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			margin-top: -25px;
+			margin-left: 135px;
+		}
+		.font4{
+		     color:white;
+		     font-size: 28px;
+			 font-weight: bold;
+			padding-left: 55px;
+			position: relative;
+			top:18px;
+
+		}
+		.block1{
+			margin-top: 30px;
+			min-height: 400px;
+			width: 550px;
+			border: 2px solid #ccc;
+			padding-top: 25px;
+			border-radius: 13px;
+			margin: 10px auto;
+			overflow:hidden;
+		}
+		
+
+
+
+
+
+        
+

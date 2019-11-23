@@ -1,28 +1,84 @@
 UserDose
 ========
 
-UserDorse is a user listing site
+UserDorse is a user listing site, A web service application with all browser compatibility.
+It provides a registration page, lists registered users and outputs CSVs as per requirements. 
 
-.. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
-     :target: https://github.com/pydanny/cookiecutter-django/
-     :alt: Built with Cookiecutter Django
-.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-     :target: https://github.com/ambv/black
-     :alt: Black code style
+The code is developed entirely 
+    1. Using python, django (Python Web Framework), django rest framework (For REST APIs), and some other required modules in backed (You may find list of base requirements under BASE/config/settings/base.py, 
+       for local requirements under BASE/config/settings/local.py, 
+       for production level requirements under BASE/config/settings/production.py), 
+    2. Using html, css, jquery, jquery validation library, bootstrap 
+    3. And with using some other modules for frontend, and using Docker as for containerisation of application, database MongoDB, etc.
 
 
 :License: MIT
 
+Terminology
+--------------
+BASE :- Reffers project’s root or base path where this document may also found out or local.yml / production.yml may found out as, /userdose/
 
-Settings
+Libraries Used
+---------------
+All libraries or modules that were in the development are either free to use or are open source.
+The code is developed entirely 
+    1. Using python, django (Python Web Framework), django rest framework (For REST APIs), and some other required modules in backed (You may find list of base requirements under BASE/config/settings/base.py, 
+       for local requirements under BASE/config/settings/local.py, 
+       for production level requirements under BASE/config/settings/production.py), 
+    2. Using html, css, jquery, jquery validation library, bootstrap 
+    3. And with using some other modules for frontend, and using Docker as for containerisation of application, database MongoDB, etc.
+
+
+URLs & Structure
 --------
+- Registration /api/v1/users/
+    - Username (required, alphanumeric / basic symbols, must be UNIQUE)
+    - Password (required,Password  character, minlength: 8, maxlength:20)
+    - Confirm Password (required, Password  character, must be equal to Password)
+    - Email (required, basic email validations, must be UNIQUE)
+- List Users
+- Get Users in CSV (User May select one detail to be exported as well as may select multiples and then export )
 
-Moved to settings_.
-
-.. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
 
 Basic Commands
 --------------
+
+
+Setting Up MongoDB Database
+^^^^^^^^^^^^^^^^^^^^^
+
+* To setup a **MongoDB Database**, just go to BASE/settings/base.py, 
+find  DATABASES and fill out / correct out the required details. Once you save it, its done. 
+
+Docker 
+^^^^^^
+* Go to terminal and run the following command to build the stack of project. ::
+
+    $ docker-compose -f production.yml build
+
+Now we may run::
+
+    $ docker-compose -f local.yml up
+
+Or::
+
+    $ docker-compose -f production.yml up
+
+If you are using local.yml, To Detach containers run::
+
+    $ docker-compose -f local.yml up -d 
+
+To Migrate::
+
+    $ docker-compose -f local.yml --rm django python manage.py makemigrations
+
+    $ docker-compose -f local.yml --rm django python manage.py migrate
+
+For logs::
+
+    $ docker-compose -f local.yml logs
+
+
 
 Setting Up Your Users
 ^^^^^^^^^^^^^^^^^^^^^
@@ -31,7 +87,7 @@ Setting Up Your Users
 
 * To create an **superuser account**, use this command::
 
-    $ python manage.py createsuperuser
+    $ docker-compose -f local.yml --rm django python manage.py  createsuperuser
 
 For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
 
@@ -59,31 +115,3 @@ Running tests with py.test
 ::
 
   $ pytest
-
-Live reloading and Sass CSS compilation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Moved to `Live reloading and SASS compilation`_.
-
-.. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
-
-
-
-
-
-Deployment
-----------
-
-The following details how to deploy this application.
-
-
-
-Docker
-^^^^^^
-
-See detailed `cookiecutter-django Docker documentation`_.
-
-.. _`cookiecutter-django Docker documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
-
-
-
