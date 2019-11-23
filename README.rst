@@ -26,7 +26,7 @@ BASE :- Reffers project’s root or base path where this document may also found
 
 URLs & Structure
 --------
-- Registration /api/v1/users/
+- Registration /api/v1/accounts/register/
     - Username (required, alphanumeric / basic symbols, must be UNIQUE)
     - Password (required,Password  character, minlength: 8, maxlength:20)
     - Confirm Password (required, Password  character, must be equal to Password)
