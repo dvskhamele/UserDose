@@ -5,9 +5,10 @@ UserDorse is a user listing site, A web service application with all browser com
 It provides a registration page, lists registered users and outputs CSVs as per requirements. 
 
 The code is developed entirely using
+
 - Python, django (Python Web Framework), django rest framework (For REST APIs), and some other required modules in backed (You may find list of base requirements under BASE/config/settings/base.py, 
-   for local requirements under BASE/config/settings/local.py, 
-   for production level requirements under BASE/config/settings/production.py), 
+   - For local requirements under BASE/config/settings/local.py, 
+   - For production level requirements under BASE/config/settings/production.py), 
 - Html, css, jquery, jquery validation library, bootstrap 
 - Some other modules for frontend, and using Docker as for containerisation of application, database MongoDB, etc.
 
