@@ -1,14 +1,12 @@
 import csv
 from django.contrib.auth import get_user_model
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Q
 from django.http import HttpResponse
 from rest_framework.mixins import ListModelMixin, CreateModelMixin
 from rest_framework.response import Response
 from rest_framework.views import    APIView
 from rest_framework.viewsets import GenericViewSet
 from .serializers import UserSerializer, CreateUserSerializer
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.permissions import IsAuthenticated
 from django.views.generic import TemplateView
 from django.shortcuts import render 
 from django.contrib.auth import authenticate, login
@@ -22,7 +20,7 @@ class UserViewSet(TemplateView):
     Updates and retrieves user accounts
     """
     template_name = "users/list.html"
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (AllowAny,)
 
     def get_context_data(self, *args, **kwargs):
         context = super(UserViewSet, self).get_context_data(*args, **kwargs)
@@ -81,7 +79,7 @@ class CSVViewSet(APIView):
     """
     Outputs a CSV File of UserList
     """
-
+    permission_classes = (AllowAny,)
     def get(self, request, format=None):
         response = HttpResponse(content_type='text/csv')
         response['Content-Disposition'] = 'attachment; filename="export.csv"'

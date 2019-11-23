@@ -31,8 +31,12 @@ URLs & Structure
     - Password (required,Password  character, minlength: 8, maxlength:20)
     - Confirm Password (required, Password  character, must be equal to Password)
     - Email (required, basic email validations, must be UNIQUE)
-- List Users
-- Get Users in CSV (User May select one detail to be exported as well as may select multiples and then export )
+- ListUsers /api/v1/users/
+    - No required parameter ( As authentication / session management was not necessary as per assignment)
+- GetUsersInCSV /api/v1/users/user_list_in_csv
+    - usernames (User May select one detail to be exported as well as may select multiples and then export)
+- IsUserExists /api/v1/users/check_if_exists/
+    - username (Checks if required user already have an account or not, or if username is already taken or not.)
 
 
 Basic Commands
