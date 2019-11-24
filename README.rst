@@ -51,7 +51,7 @@ find  DATABASES and fill out / correct out the required details. Once you save i
 
 Docker 
 ^^^^^^
-* Go to terminal and run the following command to build the stack of project. ::
+Go to terminal and run the following command to build the stack of project. ::
 
     $ docker-compose -f local.yml build
 
