@@ -53,17 +53,17 @@ Docker
 ^^^^^^
 * Go to terminal and run the following command to build the stack of project. ::
 
-    $ docker-compose -f production.yml build
-
-Now we may run::
-
-    $ docker-compose -f local.yml up
+    $ docker-compose -f local.yml build
 
 Or::
 
-    $ docker-compose -f production.yml up
+    $ docker-compose -f production.yml build
 
-If you are using local.yml, To Detach containers run::
+If you are using local.yml, Now you may run::
+
+    $ docker-compose -f local.yml up
+
+To Detach containers run::
 
     $ docker-compose -f local.yml up -d 
 
