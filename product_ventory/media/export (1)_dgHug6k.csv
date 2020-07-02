@@ -1,0 +1,6 @@
+Name,Type,Quantity,Price,Available,Stock,Total,Vendor,Created_at
+scooter,vehicle,1,12,0,0,125,pawas123,2020-07-01 12:13:50.579726+00:00
+bikecaar,vehicle,1,12,0,0,125,pawas123,2020-07-01 12:13:50.993667+00:00
+caarqqwe,vehicle,1,12,0,1,125,pawas123,2020-07-01 12:13:51.702507+00:00
+car verna ,vehicle,1,12,0,0,1,pawas123,2020-07-01 12:13:52.710059+00:00
+car verna 1 ,vehicle,1,12,0,0,3,pawas123,2020-07-01 12:13:52.710059+00:00

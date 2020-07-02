@@ -1,8 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3551a4b-67c3-4302-ad6d-60856ca8454e" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="f3551a4b-67c3-4302-ad6d-60856ca8454e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose/local/django/start" beforeDir="false" afterPath="$PROJECT_DIR$/compose/local/django/start" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose/production/django/start" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/django/start" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose/production/traefik/traefik.toml" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/traefik/traefik.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydatabase" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/local.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/local.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/contrib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/contrib/sites/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/contrib/sites/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/contrib/sites/migrations/0002_alter_domain_unique.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/contrib/sites/migrations/0003_set_site_domain_and_name.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/contrib/sites/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/static/css/Form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/static/css/project.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/static/fonts/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/static/images/favicons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/static/js/Validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/static/js/project.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/static/sass/custom_bootstrap_vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/static/sass/project.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/403.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/account_inactive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/email_confirm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/logout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_change.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_reset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_reset_done.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_reset_from_key.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_reset_from_key_done.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_set.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/signup_closed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/verification_sent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/account/verified_email_required.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/pages/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/pages/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/users/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/users/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/users/user_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/templates/users/user_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/adapters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/tests/factories.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/tests/test_forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/tests/test_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/tests/test_urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/tests/test_views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/users/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdose/utils/context_processors.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,23 +95,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TxWHiwjDpv68eW2SChRpWCkPwo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,5 +123,19 @@
       <updated>1574402140071</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="205" y="31" key="SettingsEditor" timestamp="1593686037778">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="205" y="31" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1593686037778" />
+    <state x="326" y="27" width="770" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593697832978">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="326" y="27" width="770" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1299.741@67.27.1299.741" timestamp="1593697832978" />
+    <state x="407" y="135" width="618" height="522" key="find.popup" timestamp="1593672069163">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="407" y="135" width="618" height="522" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1593672069163" />
   </component>
 </project>

@@ -6,8 +6,8 @@ import environ
 
 ROOT_DIR = (
     environ.Path(__file__) - 3
-)  # (userdose/config/settings/base.py - 3 = userdose/)
-APPS_DIR = ROOT_DIR.path("userdose")
+)  # (product_ventory/config/settings/base.py - 3 = product_ventory/)
+APPS_DIR = ROOT_DIR.path("product_ventory")
 
 env = environ.Env()
 
@@ -42,31 +42,28 @@ LOCALE_PATHS = [ROOT_DIR.path("locale")]
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'ENFORCE_SCHEMA': True,
-        'NAME': 'DATABASENAME',
-        'HOST': 'localhost',
-        'PORT': 27017,
-
-        'AUTH_SOURCE': 'DATABASENAME',
-
-
-    }
-}
-
-# For quick glance may uncomment this
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'mydatabase',
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'ENFORCE_SCHEMA': True,
+#         'NAME': 'ProductVentory',
+#         'PASSWORD': 'root',
+#         'HOST': '192.168.29.40',
+#         'PORT': 5432,
+
+#         'AUTH_SOURCE': 'ProductVentory',
+
+
 #     }
 # }
 
 
-
-DATABASES["default"]["ATOMIC_REQUESTS"] = True
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
+}
 
 # URLS
 # ------------------------------------------------------------------------------
@@ -96,7 +93,8 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "userdose.users.apps.UsersConfig",
+    "product_ventory.users.apps.UsersConfig",
+    "product_ventory.products.apps.ProductConfig",
     # Custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -105,7 +103,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIGRATIONS
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#migration-modules
-MIGRATION_MODULES = {"sites": "userdose.contrib.sites.migrations"}
+MIGRATION_MODULES = {"sites": "product_ventory.contrib.sites.migrations"}
 
 # AUTHENTICATION
 # ------------------------------------------------------------------------------
@@ -119,7 +117,7 @@ AUTH_USER_MODEL = "users.User"
 # https://docs.djangoproject.com/en/dev/ref/settings/#login-redirect-url
 LOGIN_REDIRECT_URL = "users:redirect"
 # https://docs.djangoproject.com/en/dev/ref/settings/#login-url
-LOGIN_URL = "account_login"
+LOGIN_URL = "users:login"
 
 # PASSWORDS
 # ------------------------------------------------------------------------------
@@ -193,7 +191,7 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
-                "userdose.utils.context_processors.settings_context",
+                "product_ventory.utils.context_processors.settings_context",
             ],
         },
     }
@@ -270,6 +268,6 @@ ACCOUNT_EMAIL_REQUIRED = True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-ACCOUNT_ADAPTER = "userdose.users.adapters.AccountAdapter"
+ACCOUNT_ADAPTER = "product_ventory.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-SOCIALACCOUNT_ADAPTER = "userdose.users.adapters.SocialAccountAdapter"
+SOCIALACCOUNT_ADAPTER = "product_ventory.users.adapters.SocialAccountAdapter"

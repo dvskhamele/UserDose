@@ -1,8 +1,8 @@
-UserDose
+ProductVentory
 ========
 
-UserDorse is a user listing site, A web service application with all browser compatibility.
-It provides a registration page, lists registered users and outputs CSVs as per requirements. 
+ProductVentory is a products listing site, A web service application with all browser compatibility.
+It provides a registration page, lists registered users and outputs CSVs as per requirements.
 The code is divided is 3 segments.
     - Local
     - Production
@@ -10,10 +10,10 @@ The code is divided is 3 segments.
 
 And is developed entirely using:-
 
-- Python, django (Python Web Framework), django rest framework (For REST APIs), and some other required modules in backed (You may find list of base requirements under BASE/config/settings/base.py, 
-   - You may find local requirements under BASE/config/settings/local.py, 
+- Python, Django (Python Web Framework), Django Rest Framework (For REST APIs), and some other required modules in backed (You may find list of base requirements under BASE/config/settings/base.py,
+   - You may find local requirements under BASE/config/settings/local.py,
    - You may find production level requirements under BASE/config/settings/production.py)
-- Html, css, jquery, jquery validation library, bootstrap 
+- Html, css, jquery, jquery validation library, bootstrap
 - Some other modules for frontend, and using Docker as for containerisation of application, database MongoDB, etc.
 
 
@@ -21,19 +21,30 @@ And is developed entirely using:-
 
 Terminology
 --------------
-BASE :- Reffers project’s root or base path where this document may also found out or local.yml / production.yml may found out as, /userdose/
+BASE :- Reffers project’s root or base path where this document may also found out or local.yml / production.yml may found out as, /product_ventory/
 
 
 URLs & Structure
 --------
-- Registration /api/v1/accounts/register/
+- Registration /accounts/register/
     - Username (required, alphanumeric / basic symbols, must be UNIQUE)
     - Password (required,Password  character, minlength: 8, maxlength:20)
     - Confirm Password (required, Password  character, must be equal to Password)
     - Email (required, basic email validations, must be UNIQUE)
-- ListUsers /api/v1/users/
+- Login /accounts/login/
+    - Username (required, alphanumeric / basic symbols, must be UNIQUE)
+    - Password (required,Password  character, minlength: 8, maxlength:20)
+- ListProducts /
+    - Upload Csv ( Requires a csv file in the order: Name,Type,Quantity,Price,Available,stock,total)
+    - Export Csv ( User May select one detailed product entry to be exported as well as may select multiples and then export)
+    ![image](https://drive.google.com/file/d/1v4xF3_achzHqZHdGPFZNngGBN9FjM-ZG/view)
+- ListVendors /accounts/
     - No required parameter ( As authentication / session management was not necessary as per assignment)
+    - Export Csv ( User May select one detailed user entry to be exported as well as may select multiples and then export)
+    ![image](https://drive.google.com/file/d/1wygaE0Cz8_I6EZN8C8E5SiJuYx5HDFUF/view)
 - GetUsersInCSV /api/v1/users/user_list_in_csv
+    - usernames (User May select one detail to be exported as well as may select multiples and then export)
+- GetProductsInCSV /api/v1/users/product_list_in_csv
     - usernames (User May select one detail to be exported as well as may select multiples and then export)
 - IsUserExists /api/v1/users/check_if_exists/
     - username (Checks if required user already have an account or not, or if username is already taken or not.)
@@ -46,10 +57,10 @@ Basic Commands
 Setting Up MongoDB Database
 ^^^^^^^^^^^^^^^^^^^^^
 
-* To setup a **MongoDB Database**, just go to BASE/settings/base.py, 
-find  DATABASES and fill out / correct out the required details. Once you save it, its done. 
+* To setup a **MongoDB Database**, just go to BASE/settings/base.py,
+find  DATABASES and fill out / correct out the required details. Once you save it, its done.
 
-Docker 
+Docker
 ^^^^^^
 Go to terminal and run the following command to build the stack of project. ::
 
@@ -65,7 +76,7 @@ If you are using local.yml, Now you may run::
 
 To Detach containers run::
 
-    $ docker-compose -f local.yml up -d 
+    $ docker-compose -f local.yml up -d
 
 To Migrate::
 
@@ -97,7 +108,7 @@ Running type checks with mypy:
 
 ::
 
-  $ mypy userdose
+  $ mypy product_ventory
 
 Test coverage
 ^^^^^^^^^^^^^

@@ -4,14 +4,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views import defaults as default_views
 from rest_framework.routers import DefaultRouter
-from userdose.users.views import (
-    UserViewSet,
+from product_ventory.users.views import (
     UserCreateViewSet,
 )
 
 router = DefaultRouter()
 # User management
-router.register(r'accounts/register', UserCreateViewSet)
+router.register(r'accounts/register', UserCreateViewSet,base_name='register_view')
 
 urlpatterns = [
     #APIs
@@ -19,13 +18,8 @@ urlpatterns = [
     # Django Admin
     path(settings.ADMIN_URL, admin.site.urls),
     # User stuff: User urls includes go here
-    path("api/v1/users/", include("userdose.users.urls", namespace="users")),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-if settings.DEBUG:
-    # This allows the error pages to be debugged during development, just visit
-    # these url in browser to see how these error pages look like.
-    urlpatterns += [
+    path("accounts/", include("product_ventory.users.urls", namespace="users")),
+  path("", include("product_ventory.products.urls", namespace="products")),
         path(
             "400/",
             default_views.bad_request,
@@ -42,8 +36,9 @@ if settings.DEBUG:
             kwargs={"exception": Exception("Page not Found")},
         ),
         path("500/", default_views.server_error),
-    ]
-    if "debug_toolbar" in settings.INSTALLED_APPS:
-        import debug_toolbar
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-        urlpatterns = [path("__debug__/", include(debug_toolbar.urls))] + urlpatterns
+if "debug_toolbar" in settings.INSTALLED_APPS:
+    import debug_toolbar
+
+    urlpatterns = [path("__debug__/", include(debug_toolbar.urls))] + urlpatterns

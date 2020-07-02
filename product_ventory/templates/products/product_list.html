@@ -1,0 +1,99 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="icon" type="image/ico" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmvyTrQDC5IL9uwL9isiMI1JW-o7PH-7rL18BH9lKs7P4dl1pkrA&s">
+	<title>Product Inventory</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'css/Form.css'%}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+	<div class="block2">
+		<div class="header2" style="width: 318px;">
+              <span class="font5" style="padding-left:5px;">PRODUCT INVENTORY</span>
+        </div>
+    <div style="text-align: center;">
+      <span style="font-size:17px;">{{error_message}}</span>
+    </div>
+    <div style="display:flex;">
+    <div style="font-size: 18px;margin-left: 8px;margin-bottom: -46px;margin-top: 14px;float:left;margin-right:25.3em;">
+      <span>Hi</span>
+    <span>{{username}},</span>
+    </div>
+    <div style="font-size: 18px;margin-left: 17px;margin-bottom: -46px;margin-top: 14px;">
+      <span style="cursor: pointer;"><a href="{% url 'users:user_list' %}">See Vendors</a></span>
+      <span>|</span>
+    <span style="cursor: pointer;" ><a href="{% url 'users:logout' %}">Logout</a></span>
+    </div>
+      </div>
+        <form action="/product_list_in_csv/" class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl ">
+          <table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Type</th>
+      <th scope="col">quantity</th>
+      <th scope="col">price</th>
+      <th scope="col">available</th>
+      <th scope="col">stock</th>
+      <th scope="col">total</th>
+      <th scope="col">vendor</th>
+      <th scope="col">created_at</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for product in products %}
+    <tr>
+      <td scope="row"><input type="checkbox" value="{{product.id}}"  name="id"></td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.type }}</td>
+      <td>{{ product.quantity }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.available }}</td>
+      <td>{{ product.stock }}</td>
+      <td>{{ product.total }}</td>
+      <td>{{ product.vendor }}</td>
+      <td>{{ product.created_at }}</td>
+      <td><a href="/product_list_in_csv/?id={{product.id}}">Export</a></td>
+    </tr>
+    {% endfor %}
+
+  </tbody>
+</table>
+
+
+          <button class="btn btn-block btn-primary"> Export Selected</button>
+          </form>
+          <div style="font-size: 16px;text-align: center;margin-top: 8px;">
+            <span><span style="font-weight:bold;font-size:17px;">Upload Product Csv</span> In This Order: Name,Type,Quantity,Price,Available,stock,total</span>
+          </div>
+          <form method="POST" action="{% url 'products:product_csv' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+          <div class="input-group" style="width:111%;margin-top:-31px;margin-left:11px;margin-bottom: 12px;display: inline-table;">
+              <input type="text" class="form-control" readonly>
+            <div class="input-group-btn">
+              <span class="fileUpload btn btn-primary">
+                  <span class="upl"  id="upload">Upload Csv</span>
+                  <input type="file" name="file" class="upload up btn-primary" id="up" style="background-color:blue" required/>
+                </span><!-- btn-orange -->
+             </div><!-- btn -->
+            <div>
+                      <button type="submit" style="margin-top: -23px;margin-right: -9px"  class="btn btn-primary">Submit</button>
+              </div>
+             </div><!-- group -->
+	        </form>
+	</div>
+
+
+
+</body>
+</html>

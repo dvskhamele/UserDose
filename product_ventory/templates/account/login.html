@@ -1,0 +1,108 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="icon" type="image/ico" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmvyTrQDC5IL9uwL9isiMI1JW-o7PH-7rL18BH9lKs7P4dl1pkrA&s">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="{%static 'css/Form.css'%}">
+  <script src="{%static 'js/Validation.js'%}" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-3">
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-5">
+
+<div class="block container" style="height:383px;margin-top:127px">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="">
+            <form method="POST" action="" id="regForm" name="regForm">
+              {% csrf_token %}
+            <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="header">
+              <span class="font3" style="left:230px;">Sign in</span>
+            </div>
+          </div>
+        </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="position">
+                    <label for="username">Username</label>
+                    <input type="text" onkeyup="validateloginUsername();" name="username" class=" border1 color" id="username" required="True">
+                    <label class="error" id="not_an_exist_user"></label>
+                </div>
+              </div>
+             </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="position">
+                      <label for="upass">Password</label>
+                      <input type="password" class="border1 color" name="password" id="password"  required="True"  >
+                    <label>{{error_message}}</label>
+                </div>
+              </div>
+            </div>
+              <span class="error" id="any thing"></span>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+              <div class="col-sm-8 col-md-8 col-lg-8">
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+
+                  <button type="reset" class="font1 color1 color2">RESET</button>
+                            <!-- Trigger the modal with a button -->
+                <button type="submit" class="font2 color1" id="signin" >SIGN IN</button>
+            </div>
+            <div class="row">
+              <div class="col-sm-2 col-md-2 col-lg-2">
+                </div>
+                <div class="col-sm-10 col-md-10 col-lg-10">
+                <a href="{% url 'users:register' %}" class="font2 color1" >Not have an account yet?, REGISTER HERE.</a>
+            </div>
+          </div>
+          </div>
+          </div>
+          </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+
+                    <div class="popup">
+                       <span>Registration Successfull</span>
+                       <a href="{% url 'users:user_list' %}" type="reset" class="btn btn-default font1 color1 color2 pos1 " >See Vendors</a>
+                       <a href="{% url 'products:product_list' %}" type="reset" class="btn btn-default font1 color1 color2 pos2 " >See Products</a>
+                    </div>
+
+
+
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-# UserDose documentation build configuration file, created by
+# ProductVentory documentation build configuration file, created by
 # sphinx-quickstart.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -39,7 +39,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "UserDose"
+project = "ProductVentory"
 copyright = """2019, Divyesh Khamele"""
 
 # The version info for the project you're documenting, acts as replacement for
@@ -163,7 +163,7 @@ html_static_path = ["_static"]
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "userdosedoc"
+htmlhelp_basename = "product_ventorydoc"
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -182,8 +182,8 @@ latex_elements = {
 latex_documents = [
     (
         "index",
-        "userdose.tex",
-        "UserDose Documentation",
+        "product_ventory.tex",
+        "ProductVentory Documentation",
         """Divyesh Khamele""",
         "manual",
     )
@@ -217,8 +217,8 @@ latex_documents = [
 man_pages = [
     (
         "index",
-        "userdose",
-        "UserDose Documentation",
+        "product_ventory",
+        "ProductVentory Documentation",
         ["""Divyesh Khamele"""],
         1,
     )
@@ -236,11 +236,11 @@ man_pages = [
 texinfo_documents = [
     (
         "index",
-        "userdose",
-        "UserDose Documentation",
+        "product_ventory",
+        "ProductVentory Documentation",
         """Divyesh Khamele""",
-        "UserDose",
-        """UserDorse is a user listing site""",
+        "ProductVentory",
+        """ProductVentory is a user listing site""",
         "Miscellaneous",
     )
 ]
