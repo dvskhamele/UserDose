@@ -2,86 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3551a4b-67c3-4302-ad6d-60856ca8454e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/local/django/start" beforeDir="false" afterPath="$PROJECT_DIR$/compose/local/django/start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/django/start" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/django/start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/traefik/traefik.toml" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/traefik/traefik.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydatabase" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/local.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/local.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/conftest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/contrib/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/contrib/sites/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/contrib/sites/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/contrib/sites/migrations/0002_alter_domain_unique.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/contrib/sites/migrations/0003_set_site_domain_and_name.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/contrib/sites/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/static/css/Form.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/static/css/project.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/static/fonts/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/static/images/favicons/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/static/js/Validation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/static/js/project.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/static/sass/custom_bootstrap_vars.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/static/sass/project.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/403.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/account_inactive.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/email.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/email_confirm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/logout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_change.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_reset.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_reset_done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_reset_from_key.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_reset_from_key_done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/password_set.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/signup_closed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/verification_sent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/account/verified_email_required.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/pages/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/pages/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/users/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/users/registration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/users/user_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/templates/users/user_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/adapters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/tests/factories.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/tests/test_forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/tests/test_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/tests/test_urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/tests/test_views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/users/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdose/utils/context_processors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (1)_F025ayb.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (1)_dgHug6k.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (1)_plVX5qM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (24).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (24)_Q4yhVaN.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (29).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (29)_JgQ0982.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (31).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (31)_MrV1ZHt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (31)_Ne8yaJh.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (31)_R6fTxJB.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (31)_Vgr1agq.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (31)_YLttgDg.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (31)_hkIRcqr.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (31)_kc0DlT9.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (31)_mIYzbHR.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (31)_oF4ST5h.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/export (35).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas123.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas1234.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_9ZaT8ra.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_AEheeq0.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_Ga1SQHC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_JYUMybF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_MudjGCw.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_QX00yGK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_bckDfEW.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_lA7fhCV.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_mYui87Y.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_otu9PnZ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/pawas12345_wf2b8TN.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file1_GrVgxMN.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file1_HgndYHp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file1_eWCTQrv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file1_qkQGyJx.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file1_ug44hoz.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_0IBm8zW.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_D9hdMjO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_JEKeIqs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_Lj5vvzr.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_OjhDLhe.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_RCncB25.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_TVQdJJP.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_bsVJbqM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_fLuNMeQ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_fVzqmqH.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_nuDSi1q.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_r9rtxf8.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_rPoIHAh.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_xWFZHC5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_ventory/media/project_file5_xaI2IWA.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -42,26 +42,18 @@ LOCALE_PATHS = [ROOT_DIR.path("locale")]
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'ENFORCE_SCHEMA': True,
-#         'NAME': 'ProductVentory',
-#         'PASSWORD': 'root',
-#         'HOST': '192.168.29.40',
-#         'PORT': 5432,
-
-#         'AUTH_SOURCE': 'ProductVentory',
-
-
-#     }
-# }
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENFORCE_SCHEMA': True,
+        'NAME': 'ProductVentory',
+        'PASSWORD': 'root',
+        'HOST': '192.168.29.40',
+        'PORT': 5432,
+
+        'AUTH_SOURCE': 'ProductVentory',
+
+
     }
 }
 
